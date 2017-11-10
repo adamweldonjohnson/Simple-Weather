@@ -1,0 +1,22 @@
+OpenWeatherMaps API Key = 86f63dcb9d2bd1cf3f8d4438c91746a9
+
+Thermometer Mercury path, where Y = relative height
+  *** e.g. if "L16,3", where 3 is representational of Y and the operator on all Y values is 5,
+  then previous statement would translate to "L16,8". All instances of "Y" should be translated by the same amount,
+  regardless of relative position.
+
+  ****
+  <path xmlns="http://www.w3.org/2000/svg" d="
+  M16,Y C15.4477153,Y 15,Y.43945834 15,Y.00246167
+  L15,23.9975383
+  C15,24.5511826 15.4438648,25 16,25
+  L16,25
+  C16.5522847,25 17,24.5605417 17,23.9975383
+  L17,Y.00246167
+  C17,Y.44881738 16.5561352,Y 16,Y
+  L16,Y
+  Z M16,Y"
+  fill="#FF0000"
+  id="Rectangle"/>
+
+  **** need to figure out how to create spans on otherwise invisible elements. Possibly inspect in browser, and multiply by a variable when pasted directly in HTML?

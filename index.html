@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Simple Weather</title>
+  </head>
+  <body id="body">
+    <div class="inputContainer">
+      <div class="">
+        <input type="text" id="zipCode" placeholder="Enter your zip code">
+        <!-- <input type="submit" id="submit"> -->
+        <button type="button" id="submit">Get the Weather!</button>
+      </div>
+      <div id="cityName">
+      </div>
+    </div>
+    <div class="displayContainer">
+      <!-- API NOT RETURNING FORECAST DATA (DUPLICATE DATA FOR EVERY ENTRY) -->
+      <!-- <div id="fiveDayForecast">
+        <div id="day1">day1
+        </div>
+        <div id="day1">day2
+        </div>
+        <div id="day1">day3
+        </div>
+        <div id="day1">day4
+        </div>
+        <div id="day1">day5
+        </div>
+      </div> -->
+      <div id="thermometer">
+        <h2>Current Weather</h2>
+        <img src="icons/thermometers/thermoHot.svg" alt="a thermometer with full mercury" id="thermometerImg">
+        <div class="range">
+          <div id="lowTemp">32
+          </div>
+          <div id="currentTemp">50
+          </div>
+          <div id="highTemp">100
+          </div>
+        </div>
+      </div>
+      <div id="mainCondition">
+        <img src="icons/wUnderground/sunny.svg" alt="a picture of the sun" id="mainConditionIcon">
+      </div>
+      <div class="wind-humidity-column">
+        <div class="wind">
+          <img id="weatherVane" src="icons/weatherVane.png" alt="a weather vane with a rooster on it">
+          <div id="windSpeed">
+          </div>
+          <div id="windDirection">
+          </div>
+        </div>
+        <div class="humidity">
+          <img src="icons/humidity.png" alt="a drop of water with a percent sign inside">
+          <div id="humidityNum">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="script.js"></script>
+</html>
