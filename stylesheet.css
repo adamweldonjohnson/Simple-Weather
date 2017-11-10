@@ -1,0 +1,228 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-------BODY SETUP---------*/
+html {
+	box-sizing: border-box;
+	font-family: 'Libre Baskerville', serif;
+	background-color: #5edcf2;
+}
+
+div {
+  /*border: 1px solid #858a91;*/
+}
+body {
+	max-width: 70%;
+	margin: 0 auto;
+	box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+}
+
+h2 {
+	font-size: 2em;
+	padding: 0.5em;
+}
+
+h3 {
+	font-size: 1.8em;
+	padding: 0.2em;
+}
+
+h4 {
+	font-size: 1.2em;
+}
+
+.inputContainer {
+  flex: 1;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+input[type='text'] {
+	text-align: center;
+	font-size: 1.5em;
+	padding: 0.5em;
+	margin-right: 0.5em;
+	margin-bottom: 1em;
+	background-color: #5edcf2;
+	color: black;
+	border-color: black;
+	border-radius: 5%;
+}
+
+::-webkit-input-placeholder {
+  color: black;
+	font-family: 'Libre Baskerville', serif;
+}
+::-moz-placeholder {
+  color: black;
+	font-family: 'Libre Baskerville', serif;
+}
+:-ms-input-placeholder {
+  color: black;
+	font-family: 'Libre Baskerville', serif;
+}
+:-moz-placeholder {
+  color: black;
+	font-family: 'Libre Baskerville', serif;
+}
+
+#submit {
+	font-family: 'Libre Baskerville', serif;
+	background-color: #5edcf2;
+	color: black;
+	padding: 0.3em;
+	font-size: 1.2em;
+	border: 0.1em solid black;
+	border-radius: 0.5em;
+}
+
+#cityName {
+	padding: 0.5em;
+}
+
+.displayContainer {
+  flex: 8;
+  display: flex;
+  width: 100%;
+	max-height: 35em;
+}
+
+/*-------DISPLAY SETUP--------*/
+/*------FORECAST*/
+#fiveDayForecast {
+  flex: 1;
+  display: block;
+	height: 30em;
+}
+
+#fiveDayForecast div {
+	border: 1px solid #858a91;
+	border-radius: 0.5em;
+	min-height: 6em;
+	min-width: 5em;
+	margin: 0.5em;
+}
+
+/*------TEMPERATURE*/
+#thermometer {
+	text-align: center;
+  flex: 2;
+	max-width: 25%;
+	min-width: 10em;
+	max-height: 100%;
+	margin: 0.5em;
+	display: inline-block;
+	background-image: url('icons/backgrounds/normalBG.jpg');
+	border-radius: 0.5em;
+}
+
+#thermometerImg {
+	min-height: 20em;
+	max-height: 30em;
+	max-width: 100%;
+	margin: 1.8em 0em;
+}
+
+.range {
+	min-height: 5em;
+}
+
+/*-------MAIN CONDITIONS*/
+#mainCondition {
+  flex: 3;
+	margin: 0.5em;
+	display: block;
+}
+
+#mainConditionIcon {
+	border: 0.2em solid black;
+	border-radius: 0.5em;
+	min-width: 5em;
+}
+/*---------WIND/HUMIDITY COLUMN*/
+#wind-humidity-column {
+  flex: 2;
+  display: inline-block;
+	max-width: 100%;
+	min-height: 100%;
+}
+
+#weatherVane {
+	max-width: 35%;
+}
+
+.wind {
+	height: 50%;
+	text-align: center;
+	max-height: 100%;
+	margin: 0.5em;
+	background-color: #5edcf2;
+	border: 0.2em solid black;
+	border-radius: 0.5em;
+}
+
+.humidity {
+	text-align: center;
+	height: 50%;
+	margin: 0.5em;
+	background-color: #5edcf2;
+	border: 0.2em solid black;
+	border-radius: 0.5em;
+}
+
+.humidity img {
+	max-width: 35%;
+}
