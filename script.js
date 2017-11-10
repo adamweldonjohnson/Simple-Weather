@@ -91,13 +91,10 @@ function onSubmit() {
         let humidity = dataJSON.main.humidity;
         let windSpeed = Math.round(dataJSON.wind.speed);
         let windDirection = dataJSON.wind.deg;
-
-          //THOUGHT THAT conditionCode WAS WORKING. TURNS OUT, THE ID IS BEING REPORTED BACK AND IS VISIBLE IN THE CONSOLE BY LOGGING dataJSON.weather, BUT FOR SOME REASON dataJSON.weather.id RETURNS UNDEFINED (EVEN THOUGH IT IS NOT UNDEFINED). GIVING UP AFTER 3 HOURS OF TROUBLESHOOTING. #1STWORLDPROBLEMS
-
         let conditionCode = dataJSON.weather[0].id;
         let cityName = dataJSON.name;
 
-        // DOCUMENTATION SHOWS ".RAIN" BUT OBJECT DOES NOT CONTAIN THE PROPERTY
+        // DOCUMENTATION SHOWS ".RAIN" BUT OBJECT DOES NOT CONTAIN THE ELEMENT
         // let precipitation = dataJSON.rain.3h;
 
         // INPUTTING CITY NAME INTO THE DOM
